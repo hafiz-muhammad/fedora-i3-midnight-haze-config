@@ -1,0 +1,111 @@
+/* 
+ *  Rofi Midnight Haze theme
+ *  GitHub: https://github.com/hafiz-muhammad
+ */
+
+* {
+    bg: #0c0c16;
+    bg-alt:  #2c2c3d;
+    red:     #ff6e6e;
+    green:   #9ec875;
+    yellow:  #ffa759;
+    blue:    #70a7d4;
+    magenta: #d291e0;
+    cyan:    #96e0e0;
+    white:   #d8dee9;
+
+    background-color: @bg;
+}
+
+window {
+	width: 55%;
+	orientation: vertical;
+    	/* border-radius:                  0px; */
+   	    /* height:                         88%; */
+    	/* location:                       west; */
+    	/* x-offset:                       0; */
+    	/* y-offset:                       0; */
+}
+
+mainbox {
+	border: 3px;
+	border-color: @magenta;
+	padding: 0;
+	children: [inputbar, wrapper-mode-switcher, listview];
+}
+
+listview {
+	columns: 2;
+	lines: 10;
+	padding: 8 0;
+	fixed-height: 0;
+	fixed-columns: 0;
+	fixed-lines: 0;
+	border: 2px;
+}
+
+inputbar {
+    spacing: 0;
+    padding: 1px ;
+}
+
+entry {
+	placeholder: "Type here";
+	text-color: @white;
+	padding: 10 10 0 0;
+	margin: 0 -2 0 0;
+}
+
+prompt {
+	text-color: @green;
+	padding: 10 6 0 10;
+	margin: 0 -2 0 0;
+}
+
+wrapper-mode-switcher {
+    orientation: horizontal;
+
+    expand: false;
+    spacing: 0;
+    children: [mode-switcher];
+}
+
+mode-switcher {
+    border: 0px;
+    spacing: 0px;
+    expand: true;
+}
+
+button {
+    padding: 2px;
+    border: 0px 0px 2px ;
+    text-color: @white;
+}
+
+button selected.normal {
+    text-color: @white;
+    background-color: @bg-alt;
+	
+    border: 2px 2px 0px ;
+}
+
+element {
+	padding: 4 12;
+}
+
+element selected {
+	background-color: @bg-alt;
+	text-color: @white;
+}
+
+element-text {
+	background-color: inherit;
+	text-color: @white;
+}
+
+element-icon {
+	size: 25 px;
+	background-color: inherit;
+	padding: 0 6 0 0;
+	alignment: vertical;
+}

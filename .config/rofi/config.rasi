@@ -1,0 +1,14 @@
+configuration {	 
+	display-window: "Window ";
+	display-drun: "Launch ";
+	display-run: "Run ";
+	display-clipboard: "Clipboard ";
+	modi: "drun,window,run";
+	location: 0;
+	font: "LiterationMono Nerd Font 10";
+	show-icons: true;
+	icon-theme: "adwaita";
+	terminal: "alacritty";
+}
+
+@theme "~/.config/rofi/themes/midnight-haze.rasi"
