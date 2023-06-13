@@ -1,0 +1,25 @@
+#!/bin/sh
+
+# Checks if xprop is installed
+if ! command -v xprop >/dev/null 2>&1; then
+  echo "Error: xprop is not installed"
+  exit 1
+fi
+
+# Gets the ID of the active window
+id=$(xprop -root _NET_ACTIVE_WINDOW | awk '{print $NF}')
+
+# Checks if ID is valid
+if [ -z "$id" ] || [ "$id" = "0x0" ]; then
+  # No active window, displays the current user's name
+  echo "$(whoami)"
+else
+  # Gets the class name of the window
+  class=$(xprop -id "$id" WM_CLASS | awk '{print $NF}')
+
+  # Removes quotes and extra characters from the class name
+  class=$(echo "$class" | sed 's/^"//;s/"$//;s/\\"/"/g')
+
+  # Displays the class name
+  echo "$class"
+fi
