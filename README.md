@@ -14,7 +14,7 @@
 <br>
 
 ## Essential Software & Utilities
-- [Picom](https://github.com/yshui/picom) - A lightweight compositor for X11.
+- [picom](https://src.fedoraproject.org/rpms/picom) - picom is a compositor for X, and a fork of Compton.
 - [Polybar](https://github.com/polybar/polybar) - A fast and easy-to-use status bar. 
 - [Alacritty](https://github.com/alacritty/alacritty) - A cross-platform, OpenGL terminal emulator.
   - [Alacritty Midnight Haze Theme](https://github.com/alacritty/alacritty-theme/blob/master/themes/midnight-haze.yaml)
