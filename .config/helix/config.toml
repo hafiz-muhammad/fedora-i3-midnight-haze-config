@@ -1,7 +1,5 @@
 # Configuration documentation: https://docs.helix-editor.com/master/configuration.html
 
-theme = "custom"
-
 [editor]
 scrolloff = 5
 mouse = true
